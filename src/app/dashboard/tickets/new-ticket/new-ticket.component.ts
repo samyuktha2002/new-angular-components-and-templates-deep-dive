@@ -11,8 +11,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './new-ticket.component.css'
 })
 export class NewTicketComponent {
-  @ViewChild('form') form?: ElementRef<HTMLFormElement>; 
-  
+  @ViewChild('form') private form?: ElementRef<HTMLFormElement>; 
+
   onSubmit(title: string, ticketText:string){
     console.log(title);
     console.log(ticketText);
